@@ -1,0 +1,182 @@
+Base tags
+
+<html> </html> - HTML tag
+<head> </head> - about page tag
+<title> </title> - title tag (appears on tabs of browser)
+<body> </body> - body tag (web page itself)
+
+
+
+
+
+Structural markup tags
+
+<h1> - <h6> </h1> - <h6> - heading tags from biggest to smallest
+<p> </p> - paragraph tag (plain text)
+<b> </b> - bold tag
+<i> </i> - italic tag
+<sup> </sup> - superscript tag (same as power in math)
+<sub> </sub> - subscript tag (same as the number of atoms in chemistry)
+<br /> - line break tag (new line)
+<hr /> - theme break tag (horizontal line)
+
+
+
+Semantic markup tags
+
+<strong> </strong> - strong importance tag (by default bold)
+<em> </em> - emphasis tag (by default italic)
+<blockquote> </blockquote> - large quotation tag
+<q> </q> - small quotation tag (adds qoutation marks; NOT SUPPORTED IN INTERNET EXPLORER)
+<abbr> </abbr> - abbreviation tag
+<cite> </cite> - citation tag
+<dfn > </dfn> - definition tag (style is not changed in Chrome and Safari)
+<address> </address> - contact details tag (look at hCards)
+<ins> </ins> - insertion tag (underlined)
+<del> </del> - deletion tag (crossed out)
+<s> </s> - irrelevance tag
+
+
+
+
+Lists
+
+<li> </li> - list item tag
+<ol> </ol> - ordered list tag (numbered)
+<ul> </ul> - unordered list tag (bulleted)
+<dl> </dl> - definition list tag
+<dt> </dt> - defined item name tag
+<dd> </dd> - definition tag
+
+
+
+
+
+Links
+
+<a> </a> - link tag
+href - link
+	full URL - link to different site
+	name of a file - link to different page on same site
+		"name.html" - file in the same folder
+		"folder/name.html" - file in subfolder
+		"../name.html" - file in parent folder
+	mailto: email - email
+	#id - element in a page
+target - place of opening
+	_blank - new tab or window
+
+
+
+
+Images
+
+<img /> - image tag
+	src - image source
+	alt - description
+	title - title
+	height - height
+	width - width
+<figure> </figure> - image with caption tag (HTML5)
+<figcaption> </figcaption> - caption of image (HTML5)
+
+
+
+Tables
+
+<table> </table> - table tag
+<tr> </tr> - row tag
+<td> </tr> - cell tag
+<th> </th> - heading cell (bold, middle of the cell)
+<thead> </thead> - table heading tag
+<tbody> </tbody> - table body tag
+<tfoot> </tfoot> - table footer tag
+
+
+
+Forms
+
+<form> </form> - form tag
+	action - action attribute (URL for server-side code)
+	method - method of receiving data
+		get - added to the end of URL (short forms or just retrieving data from server)
+		post - sent as HTTP headers (files, long forms, passwords or modifying data in server)
+<input /> - form control tag
+	type - type of input
+		text - plain text
+		password - hidden text
+		radio - radio button
+		checkbox - checkbox
+		file - file
+		submit - text submit button
+		image - image submit button (uses <img> attributes)
+		hidden - not visible (used for control)
+		date - date (HTML5)
+		email - email (HTML5)
+		url - web page address (HTML5)
+		search - search box (HTML5)
+	name - name of input
+	maxlength - maximum number of characters allowed
+	value - text on radio button/checkbox/submit button
+	checked - checked by default radio button/checkbox
+	placeholder - text inside box (HTML5)
+<textarea> </textarea> - multiline text input tag
+<select> </select> - drop down list tag
+	name - name of list
+	size - number of items to be shown at one time (CHECK ON FIREFOX AND SAFARI)
+	multiple - allows multiple choice
+<option> </option> - list option tag
+	value - value of option
+	selected - selected by default option (appears on unopened list)
+<button> </button> - button tag (text and images can be inside of it)
+<label> </label> - label tag
+	for - to which apply
+<fieldset> </fieldset> - field set tag (unites input)
+<legend> </legend> - field set name tag
+
+
+Random
+<!DOCTYPE html> - document declaration tag
+<!-- --> - comment tag
+id - unique attribute (included in other tags)
+class - class attribute (included in other tags)
+<div> </div> - block-level box tag (makes all tags inside of it apper in block)
+<span> </span> - inline-level box tag (makes all tags inside of it appear in inline)
+<iframe> </iframe> - window tag
+	src - source
+	height - height
+	width - width
+	scrolling - allowed scrolling (NOT SUPPORTED IN HTML5)
+		yes, auto, no
+	frameborder - frame border (NOT SUPPORTED IN HTML5)
+		1, 0
+	seamless - no borders or scrollbars (HTML5)
+<meta /> - meta tag (for search queries)
+	name - name
+		description - descritption
+		keywords - keywords
+		robots - include in search engines or not
+			noindex - not included
+			nofollow - that links to not included
+	content - value
+	http-equiv - other attributes
+		author - author of webpage
+		pragma - preventing caching
+		expires - expiration date
+			"Fri, 04 Apr 2014 23:59:59 GMT"
+<link /> - including file tag
+	href - path to file
+	type - type of file
+		text/css - CSS
+	rel - relationship
+		stylesheet - CSS
+<style> </style> - style tag
+	type - type of style
+		text/css - CSS
+
+
+Advices
+Block elements vs. inline elements
+Escape characters
+SWFObject
+Combine HTML5 & Flash

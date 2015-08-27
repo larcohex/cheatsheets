@@ -1,0 +1,256 @@
+Application
+
+* - apply to all
+h1, h2, h3 - apply to type
+."name of class" - apply to class
+#"name of id" - apply to id
+"parent type">"child type" - apply to child of parent
+"predecessor type" "successor type" - apply to successor of predecessor
+"type"+"sibling" - apply to next sibling of type
+"type"~"sibling" - apply
+!important - most important
+inherit - inherit property
+
+
+Color
+
+background-color: - background color
+opacity: - opacity (CSS3)
+rgba: - rgb color with opacity (CSS3)
+hsl: - hue, saturation, lightness (CSS3)
+hsla: - hsl with transparency (CSS3)
+
+
+Text
+
+font-family: - font
+font-size: - text size
+@font-face: - installable font
+	src - source of font
+	Order of font including
+		eot
+		woff
+		ttf/otf
+		svg
+font-weight: - font weight
+	normal
+	bold
+font-style: - font style
+	normal
+	italic
+	oblique
+text-transform: - text transform
+	uppercase
+	lowercase
+	capitalize
+text-decoration: - text decoration
+	none
+	underline
+	overline
+	line-through
+	blink
+line-height: - leading (space text occupies, uses ems)
+letter-spacing: - spacing between letters (uses ems)
+word-spacing: - spacing between words (uses ems)
+text-align: - text align
+	left
+	right
+	center
+	justify
+vertical-align: - vertical align (used in inline elements)
+	baseline
+	sub
+	super
+	top
+	text-top
+	middle
+	bottom
+	text-bottom
+text-indent: - indentation of first line
+text-shadow: - text shadow (CSS3)
+:first-letter - first letter style
+:first-line - first line style
+:link - unvisited link style
+:visited - visited link style
+:hover - hovered link style
+:active - pressed link style
+:focus - ready link style (commonly used with forms)
+
+
+
+Box
+height: height of box
+width: width of box
+min-height: minimum height of box
+max-height: maximum height of box
+min-width: minimum width of box
+max-width: maximum width of box
+overflow: overflow managing
+	hidden
+	scroll
+border-width: border width (in px - top, right, bottom, left)
+	thin
+	medium
+	thick
+border-top-width: - top border width
+border-right-width: - right border width
+border-bottom-width: - bottom border width
+border-left-width: - left border width
+border-style: - border style
+	solid - solid line
+	dotted - dotted line
+	dashed - dashed line
+	double - two solid lines
+	groove - carved into the page
+	ridge - stick out of the page
+	inset - embedded into the page
+	outset - coming out of the page
+	hidden/none - invisible
+border-top-style: - top border style
+border-left-style: - left border style
+border-right-style: - right border style
+border-bottom-style: - bottom border style
+border-color: - border color (can be done individually inside)
+border-top-color: - top border color
+border-left-color: - left border color
+border-right-color: - right border color
+border-bottom-color: - bottom border color
+border: - shorthand for border properties (order - width, style, color)
+padding: - padding width (in px - top, right, bottom, left)
+padding-top: - top padding width
+padding-right: - right padding width
+padding-bottom: - bottom padding width
+padding-left: - left padding width
+margin: - margin width (in px - top, right, bottom, left)
+margin-top: - top margin width
+margin-right: - right margin width
+margin-bottom: - bottom margin width
+margin-left: - left margin width
+display: - display property
+	inline
+	block
+	inline-block
+	none
+visibility: - visibility
+	hidden
+	visible
+border-image: - border from image (CSS3)
+	stretch
+	repeat
+	round
+-moz-border-image: - border from image (earlier versions of Mozilla Firefox)
+-webkit-border-image: - border from image (earlier versions of Google Chrome)
+box-shadow: - box shadow
+-moz-box-shadow: - box shadow (earlier versions of Mozilla Firefox)
+-webkit-box-shadow: - box shadow (earlier versions of Google Chrome)
+border-radius: - border rounding (CSS3; in px - top, right, bottom, left)
+border-top-right-radius: - top right border rounding (CSS3)
+border-bottom-right-radius: - bottom right border rounding (CSS3)
+border-bottom-left-radius: - bottom left border rounding (CSS3)
+border-top-left-radius: - top left border rounding (CSS3)
+-moz-border-radius: - border rounding (earlier versions of Mozilla Firefox)
+-webkit-border-radius: - border rounding (earlier versions of Google Chrome)
+
+
+
+Lists, tables, forms
+
+list-style-type: - bullet point or order number style
+	none		decimal
+	disk		decimal-leading-zero
+	circle		lower-alpha
+	square		upper-alpha
+			lower-roman
+			upper-roman
+list-style-image: - bullet point style from image
+list-style-position: - position of bullet point
+	outside
+	inside
+list-style: - list style shortcut
+empty-cells: - show empty cells
+	show
+	hide
+	inherit
+border-spacing: - space between cells
+border-collapse: - collapse cells
+	collapse
+	separate
+cursor: - cursor style
+	auto
+	crosshair
+	default
+	pointer
+	move
+	text
+	wait
+	help
+	url ("cursor.gif")
+
+
+
+Layout
+
+position: - position of box
+	static
+	relative
+		top
+		bottom
+		left
+		right
+	absolute
+		top
+		bottom
+		left
+		right
+	fixed
+z-index: - overlap importance
+float: - floating property (other content flows around box)
+	right
+	left
+clear: - box touching property (floating clearing)
+	left
+	right
+	both
+	none
+
+Images
+
+background-image: url("file path") - background image
+background-repeat: - repetition of background image
+	repeat
+	repeat-x
+	repeat-y
+	no-repeat
+background-attachment: - background image attachment
+	fixed
+	scroll
+background-position: - position of background image (if not repeated)
+	left top
+	left center
+	left bottom
+	center top
+	center center
+	center bottom
+	right top
+	right center
+	right bottom
+background: - shortcut for background picture properties
+	1. background-color
+	2. background-image
+	3. background-repeat
+	4. background-attachment
+	5. background-position
+#gradient: - gradient background image (CSS3)
+
+
+Others
+
+/* */ - comments
+@import url ("name of file") - import style from file
+
+
+Advices
+
+-9999px to text-indent: for disabled and HTML only
+left margin and right margin to auto - center
+Fixed width layout vs liquid layout
