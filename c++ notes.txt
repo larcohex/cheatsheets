@@ -9,3 +9,7 @@ really point into the same container?
 "--e.end()" above? (Fortunately, the compiler can often catch this kind of mistake for you, and for
 iterators of class type, the library author will often choose to allow this sort of thing for syntactic
 convenience.)
+
+
+
+Copy-swap assignment operator (swap to copy)
