@@ -1,0 +1,11 @@
+When using iterators, be aware of four main issues.
+1. Valid values: Is the iterator dereferenceable? For example, writing "*e.end()" is always a
+programming error.
+2. Valid lifetimes: Is the iterator still valid when it's being used? Or has it been invalidated by some
+operation since we obtained it?
+3. Valid ranges: Is a pair of iterators a valid range? Is first really before (or equal to) last? Do both
+really point into the same container?
+4. Illegal builtin manipulation: For example, is the code trying to modify a temporary of builtin type, as in
+"--e.end()" above? (Fortunately, the compiler can often catch this kind of mistake for you, and for
+iterators of class type, the library author will often choose to allow this sort of thing for syntactic
+convenience.)
